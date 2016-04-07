@@ -8,7 +8,7 @@ logical inventory and sales system.
 
 # Class Diagram of the Domain Model
 
-![alt tag](https://github.com/mydavids/barsystem/master/UML.png)
+![alt tag](https://github.com/mydavids/barsystem/master/barsystemUML.png)
 
 # Description of the Domain Model and its Invariants
 
