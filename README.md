@@ -7,7 +7,8 @@ or bars. Any club that wants to increase it's quality and speed of customer serv
 logical inventory and sales system.  
 
 # Class Diagram of the Domain Model
----
+
+![alt tag](https://github.com/mydavids/barsystem/master/UML.png)
 
 # Description of the Domain Model and its Invariants
 
