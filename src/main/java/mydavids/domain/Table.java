@@ -1,18 +1,39 @@
 package mydavids.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.io.Serializable;
 
 /**
- * Created by Yusiry Davids on 4/7/2016.
+ * Created by Yusiry Davids on 4/17/2016.
  */
+@Entity
 public class Table implements Serializable {
-
     private static final long serialVersionUID = 1L;
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private String id;
     private int tableNumber;
     private int seating;
     private String location;
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setTableNumber(int tableNumber) {
+        this.tableNumber = tableNumber;
+    }
+
+    public void setSeating(int seating) {
+        this.seating = seating;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
 
     public String getId() {
         return id;

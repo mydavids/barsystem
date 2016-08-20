@@ -1,20 +1,49 @@
 package mydavids.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.io.Serializable;
 
 /**
- * Created by Yusiry Davids on 4/7/2016.
+ * Created by Yusiry Davids on 4/17/2016.
  */
-public class Stock implements Serializable{
-
+@Entity
+public class Stock implements Serializable {
     private static final long serialVersionUID = 1L;
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private String id;
     private String stockID;
     private String name;
     private double price;
     private int amountInStock;
     private String description;
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setStockID(String stockID) {
+        this.stockID = stockID;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public void setAmountInStock(int amountInStock) {
+        this.amountInStock = amountInStock;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
     public String getId() {
         return id;

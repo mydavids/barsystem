@@ -1,10 +1,19 @@
 package mydavids.domain;
 
-/**
- * Created by Yusiry Davids on 4/7/2016.
- */
-public class Contact {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import java.io.Serializable;
 
+/**
+ * Created by Yusiry Davids on 4/17/2016.
+ */
+@Entity
+public class Contact implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
     private String cellNumber;
     private String address;
     private String postalCode;
